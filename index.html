@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="João Iacillo" />
+        <meta
+            name="description"
+            content="My solution to the Text Decoder for an Alura Challenge"
+        />
+
+        <title>Decodificador de Texto | Alura Challenge | João Iacillo</title>
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <h1><img src="svg/alura.svg" alt="alura logo" /></h1>
+        </header>
+
+        <main>
+            <textarea id="content" placeholder="Digite seu texto"></textarea>
+        </main>
+
+        <footer>
+            <span>
+                <img
+                    src="svg/bi_exclamation-circle-fill.svg"
+                    alt="exclamation mark within a circle"
+                />
+                Apenas letras minúsculas e sem acento.
+            </span>
+
+            <div class="buttons">
+                <button id="encrypt-btn">Criptografar</button>
+
+                <button id="decrypt-btn">Descriptografar</button>
+            </div>
+
+            <span>
+                Feito por
+                <a href="https://github.com/joaoiacillo/">João Iacillo.</a>
+            </span>
+
+            <div id="result-box">
+                <div id="initial-message" class="visible">
+                    <img
+                        src="svg/diamond.svg"
+                        alt="person using a magnifying glass looking at a diamond"
+                    />
+
+                    <h2>Nenhuma mensagem encontrada</h2>
+
+                    <p>
+                        Digite um texto que você deseja criptografar ou
+                        descriptografar.
+                    </p>
+                </div>
+
+                <p id="result"></p>
+
+                <button id="copy-button">Copiar</button>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
